@@ -401,9 +401,11 @@ section {
   content: '';
   left: 50%;
   top: 0;
-  width: 40%;
+  width: 60%;
   height: 1px;
   background-color: var(--color-grey-5);
+  -webkit-box-shadow: 1px 4px 15px var(--color-purple);
+          box-shadow: 1px 4px 15px var(--color-purple);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   position: absolute;

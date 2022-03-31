@@ -281,6 +281,7 @@ section {
 	}
 }
 
+//---- Skills Title ----//
 .stats-title {
 	font-size: 2rem;
 	text-transform: uppercase;
@@ -292,13 +293,15 @@ section {
 		content: '';
 		left: 50%;
 		top: 0;
-		width: 40%;
+		width: 60%;
 		height: 1px;
 		background-color: var(--color-grey-5);
+		box-shadow: 1px 4px 15px var(--color-purple);
 		transform: translateX(-50%);
 		position: absolute;
 	}
 }
+
 //---- indeepended components ----//
 .btn-con {
 	display: flex;
