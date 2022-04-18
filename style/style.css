@@ -19,7 +19,7 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --color-purple: rgb(83, 7, 134);
-  --color-dark-mode: rgba(243, 239, 7, 0.4);
+  --color-dark-mode: rgba(224, 220, 220, 0.4);
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
@@ -860,7 +860,69 @@ section {
   font-size: 6.3rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1279px) {
+  header {
+    padding: 0 !important;
+  }
+  .contact-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 5.5rem;
+  }
+  .contact-content .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+  .about-container {
+    padding-top: 5.5rem;
+  }
+  .projects {
+    padding-top: 5.5rem;
+  }
+  .contact-content .right-contact .i-c-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-content .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .section {
+    padding: 5rem 8rem;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .about-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-top: 5.5rem;
+  }
+  .about-container .right-about {
+    padding-top: 2.5rem;
+  }
+  .projects {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-top: 5.5rem;
+    margin: 0;
+  }
+  .main-title h2 {
+    font-size: 4rem;
+  }
+  .main-title h2 span {
+    font-size: 4rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
   header {
     padding: 0;
   }
@@ -893,6 +955,35 @@ section {
     margin: 0 auto;
     width: 80%;
   }
+  .section .skills-icons {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .submit-btn {
+    margin-bottom: 5.5rem;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important;
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 755px) {
   .about-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -945,8 +1036,8 @@ section {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
-  .sec5 {
-    min-height: 115vh;
+  .submit-btn {
+    margin-bottom: 5.5rem;
   }
   .main-title h2 {
     font-size: 2.5rem;
@@ -956,25 +1047,6 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 3.5rem;
-  }
-  .controls {
-    top: auto;
-    bottom: 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    left: 50%;
-    -webkit-transform: translateX(-50%) !important;
-            transform: translateX(-50%) !important;
-    width: 100%;
-    background-color: var(--color-grey-5);
-  }
-  .controls .control {
-    margin: 1rem 0.3rem;
   }
 }
 
@@ -1063,8 +1135,8 @@ section {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
-  .sec5 {
-    min-height: 125vh;
+  .submit-btn {
+    margin-bottom: 5.5rem;
   }
   .main-title h2 {
     font-size: 2.5rem;
@@ -1109,7 +1181,7 @@ section {
     height: 50px;
   }
   .main-btn .btn-text {
-    margin: 0 1.5rem;
+    margin: 0 1rem;
     padding: 0;
   }
   .header-content {
@@ -1234,7 +1306,7 @@ section {
     font-size: 0.8rem;
   }
   .contact-content .left-contact .contact-info .contact-item p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .contact-content .left-contact .social-icons {
     margin-top: 1rem;
@@ -1255,8 +1327,8 @@ section {
     height: 4rem;
     width: 4rem;
   }
-  .sec5 {
-    min-height: 125vh;
+  .submit-btn {
+    margin-bottom: 5.5rem;
   }
   .stats-title {
     font-size: 1.5rem;
